@@ -50,7 +50,7 @@ if faceDetection == True:
 				cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
 		for (ex,ey,ew,eh) in smile:
 			# Same, gura de la juamtatea fetei in jos
-			if(ey > h/2):
+			if(ey > 2 * h/3):
 				cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,255),2)
 
 cv2.imshow('img',imgNew)
